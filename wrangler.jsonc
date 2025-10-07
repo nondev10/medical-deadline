@@ -1,8 +1,0 @@
-{
-  "name": "medical-deadline",
-  "compatibility_date": "2025-10-05",
-  "assets": {
-    "directory": ".",
-    "include": ["index.html", "index.css", "index.js", "image/**/*"]
-  }
-}
