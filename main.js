@@ -1,13 +1,27 @@
+var countMode = 1;
+
 window.onload = function() {
+    const unit = document.getElementById('unit');
     const time = document.getElementById('time');
-    const target = new Date(2026, 5, 19, 0, 0, 0);  // 2026年6月19日 00:00:00
+    const target = new Date(2026, 5, 21, 0, 0, 0);  // 2026年 6 月 21 日 00:00:00
 
     setInterval(() => {
         const now = new Date();
         const diff = target - now;
         if(diff >= 0) {
-            time.innerText = target - now;
-        }
+                if (countMode == 1) {
+                    time.innerText = Math.round((target - now) / 1000);
+                    unit.innerText = '秒';
+                };
+                if (countMode == 2) {
+                    time.innerText = Math.round((target - now) / 1000 / 60);
+                    unit.innerText = '分钟';
+                };
+                if (countMode == 3) {
+                    time.innerText = Math.round((target - now) / 1000 / 60 / 60);
+                    unit.innerText = '小时';
+                };
+            }
         else
         {
             time.innerText = 0;

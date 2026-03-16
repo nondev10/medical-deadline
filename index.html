@@ -7,6 +7,7 @@
         <meta name="author" content="IOffical>
         <meta name="theme-color" content="#363636">
         <link rel="icon" type="image/png" href="./image/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
 
         <!-- Open Graph Meta Tags -->
         <meta property="og:url" content="https://www.shihao.us.kg/deadline">
@@ -49,15 +50,38 @@
             <div class="text sub-title">距离中考还剩</div>
             <div class="text title" id="time">加载中……</div>
             <div class="text sub-title">
-                毫秒
-                <span class="sub-sub-title">(ms)</span>
+                <span id="unit">
+                    秒
+                </span>
+                <span class="sub-sub-title">
+                    (
+                        <a href="#" onclick="countMode = 1; return false;">
+                            s
+                        </a>
+                        /
+                        <a href="#" onclick="countMode = 2; return false;">
+                            min
+                        </a>
+                        /
+                        <a href="#" onclick="countMode = 3; return false;">
+                            h
+                        </a>
+                    )
+                </span>
             </div>
         </div>
         <div class="lit-container">
             <div class="text title-ex">致每一位即将面临中考的同学</div>
-            <div class="text text-div">&emsp;&emsp;Hi，我是 IOfficial！和你一样，面对中考这个重要的人生命运转折点，不免感到紧张。时间一分一秒过去，中考一分一秒邻近。然而，我们总是不确定：到底还有多久？因此，我们可能对这所剩无几的时间没什么概念，也就很难懂得去珍惜这些时间。所以我做了这个简单的网页，根据往年福建省中考起始时间以 2026年6月19日 当天 0点0分 为这个倒计时的结束时间，希望你能通过这个来更直观地看到这所剩无几的时间！<br>&emsp;&emsp;祝你能考个好的成绩，以后能有好的生活！<div>
+            <div class="text text-div">
+                &emsp;&emsp;Hi，我是 IOfficial！
+                和你一样，面对中考这个重要的人生命运转折点，不免感到紧张。
+                时间一分一秒过去，中考一分一秒邻近。
+                然而，我们总是不确定：到底还有多久？
+                因此，我们可能对这所剩无几的时间没什么概念，也就很难懂得去珍惜这些时间。
+                所以我做了这个简单的网页，根据可信消息以 2026年6月21日 与 6月20日 之交的 0点0分 为这个倒计时的结束时间，希望你能通过这个来更直观地看到这所剩无几的时间！
+                <br>&emsp;&emsp;祝你能考个好的成绩，以后能有好的生活！
+            <div>
         </div>
-        <!--
         <footer class="credits-footer">
             <div class="footer-title">制作人员名单</div>
             <div class="credits-container">
@@ -86,7 +110,6 @@
                 </div>
             </div>
         </footer>
-        -->
         <div class="sub-sub-title center copyright" id="copyright"></div>
     </body>
 </html>
