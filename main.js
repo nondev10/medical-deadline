@@ -33,8 +33,8 @@ window.onload = function() {
     const nowYear = new Date().getFullYear();
     document.getElementById('copyright').textContent =
         nowYear > startYear
-            ? `${startYear}-${nowYear} © Copyright IOfficial`
-            : `${startYear} © Copyright IOfficial`;
+            ? `© ${startYear}-${nowYear} Shihao. All Rights Reserved.`
+            : `© ${startYear} Shihao. All Rights Reserved.`;
 
     // Mouse Drive Offset
     const titContainer = document.getElementsByClassName('tit-container')[0];
